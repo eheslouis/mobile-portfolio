@@ -6,7 +6,7 @@ After copying all the files, open index.html. This is the main page.
 To view the different pages, just click on the few links.
 For the "Cam's Pizzeria", you can scroll through the page and also change the size of the pizza via the scroll bar.
 
-### My optimization
+### My optimizations
 
 * After running PageSpeed using Chrome, I followed the suggestions and resized the pizzeria image. The score for mobile and desktop was 92.
 
