@@ -7,9 +7,33 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="css/criticalCSS.css" rel="stylesheet">
-
+    <!-- critical css inline -->
+    <style>
+      html {
+        font-size: 100%;
+        overflow-y: scroll;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: none;
+      }
+      body {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.61;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        color: #333;
+        background: #fff;
+      }
+      pre {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+      @media only screen and (max-width: 480px) {
+        body {
+          font-size: 12px;
+        }
+      }
+      </style>
 
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
@@ -19,8 +43,12 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
   </head>
 
   <body>
@@ -66,7 +94,7 @@
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
 
-    <script type="text/javascript">
+    <script  type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Open+Sans:400,700:latin' ] }
       };
@@ -79,10 +107,5 @@
         s.parentNode.insertBefore(wf, s);
       })(); 
     </script>
-
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet" media="print">
-
   </body>
 </html>
